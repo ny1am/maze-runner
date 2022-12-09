@@ -1,7 +1,7 @@
-import { Accessor, JSX, Setter } from 'solid-js';
+import { JSX, Setter } from 'solid-js';
 
 type RangeInputProps = {
-  value: Accessor<number>;
+  value: number;
   onChange: Setter<number>;
   min: number;
   max: number;
@@ -14,7 +14,7 @@ function RangeInput(props: RangeInputProps) {
   return (
     <input
       type="range"
-      value={props.value()}
+      value={props.value}
       min={props.min}
       max={props.max}
       onChange={handleChange}

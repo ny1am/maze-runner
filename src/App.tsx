@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div>
-      <RangeInput min={2} max={8} value={size} onChange={setSize} />
+      <RangeInput min={2} max={8} value={size()} onChange={setSize} />
       <Grid size={size} />
     </div>
   );
