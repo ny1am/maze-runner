@@ -1,5 +1,17 @@
+import { createSignal } from 'solid-js';
+
+import Grid from '@/components/Grid';
+import RangeInput from '@/components/RangeInput';
+
 const App = () => {
-  return <div>long road ahead</div>;
+  const [size, setSize] = createSignal(4);
+
+  return (
+    <div>
+      <RangeInput min={2} max={8} value={size} onChange={setSize} />
+      <Grid size={size} />
+    </div>
+  );
 };
 
 export default App;
