@@ -1,3 +1,6 @@
+import 'sanitize.css';
+import 'sanitize.css/forms.css';
+
 import { createSignal } from 'solid-js';
 
 import Grid from '@/components/Grid';
