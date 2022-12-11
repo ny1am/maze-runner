@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.tools {
+  flex-basis: 200px;
+}
+
+.map {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+.grid {
+  --border-color: blue;
+
+  display: inline-grid;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-right: none;
+
+  & button {
+    aspect-ratio: 1;
+    border: 1px solid var(--border-color);
+    border-left: none;
+    border-bottom: none;
+  }
+}
