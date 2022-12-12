@@ -29,8 +29,5 @@
   "dependencies": {
     "sanitize.css": "^13.0.0",
     "solid-js": "^1.6.4"
-  },
-  "volta": {
-    "node": "18.12.1"
   }
 }
